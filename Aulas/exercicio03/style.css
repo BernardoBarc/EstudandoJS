@@ -1,0 +1,34 @@
+body{
+    background: rgb(253, 183, 92);
+}
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 12px;
+    background: #e99f1571;
+    box-shadow: 2px 2px 5px black;
+    font-style: oblique;
+    color: rgba(255, 255, 255, 0.911);
+    padding: 2px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 12px;
+    background: #e99f1571;
+    box-shadow: 3px 3px 8px black;
+}
+input#ano{
+    border-radius: 15px;
+    width: 250px;
+    height: 15px;
+    text-align: center;
+}
+input#verificar{
+    display: block;
+    margin: auto;
+}

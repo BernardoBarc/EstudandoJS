@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancario</title>
+</head>
+<body>
+    <h1>Operações Bancarias</h1>
+    <p>Nome do cliente: </p><input type="text" id="nome">
+    <p>Saldo da Conta: </p><input type="number" id="saldo">
+    <p>Tipo de Operação: </p><select id="operacao">
+        <option value="deposito">Depósito</option>
+        <option value="saque">Saque</option>
+    </select>
+
+    <p>Valor da Operação: </p><input type="number" id="valop">
+    <button onclick="realizarOp()">Realizar Operação</button>
+
+    <div id="res"></div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

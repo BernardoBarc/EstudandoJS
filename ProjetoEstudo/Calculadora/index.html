@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calculadora</h1>
+        <div id="res"></div>
+        <br>
+        <button onclick="adnumero('7')">7</button>
+        <button onclick="adnumero('8')">8</button>
+        <button onclick="adnumero('9')">9</button>
+        <button onclick="adOperacao('+')">+</button>
+        <br>
+        <button onclick="adnumero('4')">4</button>
+        <button onclick="adnumero('5')">5</button>
+        <button onclick="adnumero('6')">6</button>
+        <button onclick="adOperacao('-')">-</button>
+        <br>
+        <button onclick="adnumero('1')">1</button>
+        <button onclick="adnumero('2')">2</button>
+        <button onclick="adnumero('3')">3</button>
+        <button onclick="adOperacao('*')">*</button>
+        <br>
+        <button onclick="adnumero('0')">0</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="adOperacao('/')">/</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Caixa de Pedidos</h1>
+    <div id="opcoes">
+        <button onclick="produto('Hamburguer', 20)" >Hamburguer</button>
+        <button onclick="produto('Pizza', 35)" >Pizza</button>
+        <button onclick="produto('X-Salada', 25)" >X-Salada</button>
+        <button onclick="produto('Refrigerante', 8)" >Refrigerante</button>
+        <br><br> 
+    </div>
+    
+    <select size="6" id="lista"></select>
+    <br><br>
+    <input placeholder="Quantidade" id="quantidade"> <button onclick="adicionar()">+</button> <button onclick="diminuir()">-</button>
+    <br><br>
+    <button onclick="finalizar()">Finalizar Pedido</button>
+    <button onclick="limpar()">Limpar Pedido</button>
+
+    <div id="res"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

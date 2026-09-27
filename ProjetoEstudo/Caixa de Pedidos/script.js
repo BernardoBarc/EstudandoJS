@@ -39,19 +39,19 @@ function limpar(){
 }
 
 function finalizar(){
-    let nomeProduto = lista.options[lista.selectedIndex].text
-    let preco = Number(lista.value)
-    let newPreco = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    let qtd = Number(quantidade.value)
-    let tot = preco * qtd
-    let totalFomatado = Number(tot)
-    let newTotal = totalFomatado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    if(quantidade.value.length == 0 || lista.length == 0){
+    if(quantidade.value.length == 0 || lista.value.length == 0){
         alert ('Impossivel Finalizar, nenhum campo pode ficar vazio')
     }else{
+        let nomeProduto = lista.options[lista.selectedIndex].text
+        let preco = Number(lista.value)
+        let newPreco = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        let qtd = Number(quantidade.value)
+        let tot = preco * qtd
+        let totalFomatado = Number(tot)
+        let newTotal = totalFomatado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
         
-    res.innerHTML = `<br>Você escolheu: ${nomeProduto}<br> Preço: ${newPreco} 
-    <br> Quantidade: ${qtd}<br>Total: ${newTotal}`
+        res.innerHTML = `<br>Você escolheu: ${nomeProduto}<br> Preço: ${newPreco} 
+        <br> Quantidade: ${qtd}<br>Total: ${newTotal}`
     }
 }
     
